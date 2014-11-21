@@ -1,0 +1,10 @@
+C:\Users\Cuong\Google Drive\Nhom 5 - Do An Co So\InOut\Process\obj\Debug\Process.dll
+C:\Users\Cuong\Google Drive\Nhom 5 - Do An Co So\InOut\Process\bin\Debug\Process.dll
+C:\Users\Cuong\Google Drive\Nhom 5 - Do An Co So\InOut\Process\bin\Debug\Process.pdb
+C:\Users\Cuong\Google Drive\Nhom 5 - Do An Co So\InOut\Process\obj\Debug\Process.pdb
+C:\Users\Cuong\Google Drive\Nhom 5 - Do An Co So\InOut\Process\obj\Debug\Model.csprojResolveAssemblyReference.cache
+E:\Google Drive\Nhom 5 - Do An Co So\InOut\Process\bin\Debug\Process.dll
+E:\Google Drive\Nhom 5 - Do An Co So\InOut\Process\bin\Debug\Process.pdb
+E:\Google Drive\Nhom 5 - Do An Co So\InOut\Process\obj\Debug\Process.dll
+E:\Google Drive\Nhom 5 - Do An Co So\InOut\Process\obj\Debug\Process.pdb
+E:\Google Drive\Nhom 5 - Do An Co So\InOut\Process\obj\Debug\Model.csprojResolveAssemblyReference.cache

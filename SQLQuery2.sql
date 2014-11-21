@@ -1,0 +1,6 @@
+select * from USER_TYPES
+select * from USERS
+SELECT * FROM ACCOUNTS
+SELECT * FROM CARDS
+select * from USERS where USERS_ID=
+select CARD_STATUS_ID,CARD_STATUS_NAME from CARD_STATUS
