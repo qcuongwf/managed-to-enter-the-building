@@ -62,6 +62,13 @@ namespace Theme
         private void button5_Click(object sender, EventArgs e)
         {
             frmFind frm = new frmFind();
+            frmFind.node = 4;
+            frm.ShowDialog(this);
+        }
+
+        private void btnEditEmloyee_Click(object sender, EventArgs e)
+        {
+            frmFind frm = new frmFind();
             frmFind.node = 3;
             frm.ShowDialog(this);
         }

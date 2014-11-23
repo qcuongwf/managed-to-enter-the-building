@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdmin));
             this.btnNhapThe = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnEditEmloyee = new System.Windows.Forms.Button();
             this.btnRecover = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -72,22 +72,23 @@
             this.btnNhapThe.UseVisualStyleBackColor = false;
             this.btnNhapThe.Click += new System.EventHandler(this.btnNhapThe_Click);
             // 
-            // button2
+            // btnEditEmloyee
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCyan;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(399, 370);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(128, 124);
-            this.button2.TabIndex = 0;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnEditEmloyee.BackColor = System.Drawing.Color.Transparent;
+            this.btnEditEmloyee.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditEmloyee.BackgroundImage")));
+            this.btnEditEmloyee.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnEditEmloyee.FlatAppearance.BorderSize = 0;
+            this.btnEditEmloyee.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnEditEmloyee.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnEditEmloyee.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCyan;
+            this.btnEditEmloyee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditEmloyee.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditEmloyee.Location = new System.Drawing.Point(399, 370);
+            this.btnEditEmloyee.Name = "btnEditEmloyee";
+            this.btnEditEmloyee.Size = new System.Drawing.Size(128, 124);
+            this.btnEditEmloyee.TabIndex = 0;
+            this.btnEditEmloyee.UseVisualStyleBackColor = false;
+            this.btnEditEmloyee.Click += new System.EventHandler(this.btnEditEmloyee_Click);
             // 
             // btnRecover
             // 
@@ -418,7 +419,7 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.btnRecover);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnEditEmloyee);
             this.Controls.Add(this.btnStatus);
             this.Controls.Add(this.btnTypeCard);
             this.Controls.Add(this.btnNhapThe);
@@ -434,7 +435,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnNhapThe;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnEditEmloyee;
         private System.Windows.Forms.Button btnRecover;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;

@@ -148,6 +148,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtIDCard);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmNhapThe";
             this.Text = "frmNhapThe";
             this.Load += new System.EventHandler(this.frmNhapThe_Load);

@@ -162,7 +162,7 @@
             this.textBox4.Location = new System.Drawing.Point(513, 124);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(167, 85);
+            this.textBox4.Size = new System.Drawing.Size(167, 57);
             this.textBox4.TabIndex = 11;
             // 
             // btnOK

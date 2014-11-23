@@ -73,7 +73,6 @@
             this.label3.Size = new System.Drawing.Size(126, 27);
             this.label3.TabIndex = 17;
             this.label3.Text = "Tên loại thẻ";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtID
             // 
@@ -94,7 +93,6 @@
             this.label1.Size = new System.Drawing.Size(85, 27);
             this.label1.TabIndex = 16;
             this.label1.Text = "Mã loại";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnCancel
             // 
@@ -129,7 +127,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCardType";
             this.Text = "frmCardType";
-            this.Load += new System.EventHandler(this.frmCardType_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -33,30 +33,26 @@ namespace Theme
 
         public void openForm()
         {
-            if (location != -1)
+            id_users = dataGridView1.Rows[location].Cells[0].Value.ToString();
+            if (node == 1)
             {
-                id_users = dataGridView1.Rows[location].Cells[0].Value.ToString();
-
-                if (node == 1)
-                {
-                    frmKhaiBaoTheHuMat frm = new frmKhaiBaoTheHuMat();
-                    frm.ShowDialog(this);
-                }
-                else if (node == 2)
-                {
-                    frmRecoveredCard frm = new frmRecoveredCard();
-                    frm.ShowDialog(this);
-                }
-                else if (node == 3)
-                {
-                    frmEditEmployee frm = new frmEditEmployee();
-                    frm.ShowDialog(this);
-                }
-                else
-                {
-                    frmReissuedCard frm = new frmReissuedCard();
-                    frm.ShowDialog(this);
-                }
+                frmKhaiBaoTheHuMat frm = new frmKhaiBaoTheHuMat();
+                frm.ShowDialog(this);
+            }
+            else if (node == 2)
+            {
+                frmRecoveredCard frm = new frmRecoveredCard();
+                frm.ShowDialog(this);
+            }
+            else if (node == 3)
+            {
+                frmEditEmployee frm = new frmEditEmployee();
+                frm.ShowDialog(this);
+            }
+            else
+            {
+                frmReissuedCard frm = new frmReissuedCard();
+                frm.ShowDialog(this);
             }
         }
 

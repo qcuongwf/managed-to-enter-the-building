@@ -20,27 +20,12 @@ namespace Theme
         private void button1_Click(object sender, EventArgs e)
         {
             type = new TypeOfCard(txtID.Text, txtName.Text);
-            try { type.Add(); }
+            try { type.Add(); this.Close(); }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
                 this.Close();
             }
-        }
-
-        private void frmCardType_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

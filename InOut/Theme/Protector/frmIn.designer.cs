@@ -179,7 +179,7 @@
             this.btnIn.ForeColor = System.Drawing.Color.White;
             this.btnIn.Location = new System.Drawing.Point(207, 244);
             this.btnIn.Name = "btnIn";
-            this.btnIn.Size = new System.Drawing.Size(180, 73);
+            this.btnIn.Size = new System.Drawing.Size(180, 95);
             this.btnIn.TabIndex = 15;
             this.btnIn.Text = "Vào";
             this.btnIn.UseVisualStyleBackColor = false;
@@ -241,7 +241,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(614, 331);
+            this.ClientSize = new System.Drawing.Size(614, 358);
             this.Controls.Add(this.gT);
             this.Controls.Add(this.gKh);
             this.Controls.Add(this.btnIn);
