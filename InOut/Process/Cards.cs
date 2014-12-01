@@ -54,9 +54,8 @@ namespace Process
             ConnectSql connect = new ConnectSql();
             if(node==1)
             {
-                SqlCommand cmd = new SqlCommand("STORE_CARD", connect.getConnection);
+                SqlCommand cmd = new SqlCommand("STORE_CARD_INSERT", connect.getConnection);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@NODE", SqlDbType.Int).Value = node;
                 cmd.Parameters.Add("@ID", SqlDbType.Char).Value = id;
                 cmd.Parameters.Add("@TYPE", SqlDbType.Char).Value = type;
                 cmd.Parameters.Add("@STATUS", SqlDbType.Char).Value = status;
@@ -74,7 +73,7 @@ namespace Process
             
             
         }
-        //Chuyển đổi trạng thái th
+        //Chuyển đổi trạng thái thẻ
         public void ImportCard()
         {
             Command(1);

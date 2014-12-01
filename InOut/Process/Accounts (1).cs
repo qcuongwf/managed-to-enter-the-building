@@ -38,15 +38,21 @@ namespace Process
             set { _password = value; }
         }
         public Accounts() { }
+        public Accounts(string pID, string pCardID)
+        {
+            id = pID;
+            cardID = pCardID;
+        }
         public Accounts(string pID, string pUserID, string pCardID, string pPassword) {
             id = pID;
             userID = pUserID;
             cardID = pCardID;
             password = pPassword;
         }
+        ConnectSql connect;
         void Command()
         {
-            ConnectSql connect = new ConnectSql();
+             connect= new ConnectSql();
             SqlCommand cmd = new SqlCommand("STORE_ACCOUNTS", connect.getConnection);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@ID", SqlDbType.Char).Value = id;
@@ -58,6 +64,16 @@ namespace Process
         public void Add()
         {
             Command();
+        }
+        //Cập nhật lại số thẻ cho account
+        public void Update()
+        {
+            connect = new ConnectSql();
+            SqlCommand cmd = new SqlCommand("STORE_ACCOUNTS_UPDATE", connect.getConnection);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@ID", SqlDbType.Char).Value = id;
+            cmd.Parameters.Add("@CARD_ID", SqlDbType.Char).Value = cardID;
+            cmd.ExecuteNonQuery();
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Process;
 
 namespace Theme
 {
@@ -17,44 +18,14 @@ namespace Theme
             InitializeComponent();
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FrmChitiet_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnIn_Click(object sender, EventArgs e)
         {
-
+            Users user = new Users(txtIdcustomer.Text, "NHANVIEN", txtName.Text, txtIndentity.Text, txtAddress.Text, txtPhone.Text, txtEmail.Text);
+            user.AddUser();
+            Accounts account = new Accounts(txtIdcustomer.Text, txtIdcustomer.Text, txtIdcard.Text, "");
+            account.Add();
+            Cards card = new Cards(txtIdcard.Text,"CSD");
+            card.Update();
         }
     }
 }

@@ -22,14 +22,14 @@ namespace Theme
             ConnectSql connect = new ConnectSql();
             if (node == 1)
             {
-                DataTable dt = connect.getDataTable("SELECT USERS_ID,USERS_NAME,USERS_IDENTITY, USERS_ADDRESS,USERS_PHONE, USERS_EMAIL from USERS where USERS_ID=" + frmFind.id_users);
+                DataTable dt = connect.getDataTable("SELECT USERS_ID,USERS_NAME,USERS_IDENTITY, USERS_ADDRESS,USERS_PHONE, USERS_EMAIL from USERS where USERS_ID='" + frmFind.id_users+"'");
                 DataRow dtrow = dt.Rows[0];
-                txtIDCard.Text = frmFind.id_users;
+                txtUser.Text = frmFind.id_users;
                 txtAddress.Text = dtrow[3].ToString();
             }
             else
             {
-                DataTable dt = connect.getDataTable("SELECT ACCOUNT_ID, ACCOUNT_PASSWORD FROM ACCOUNTS WHERE ACCOUNT_USERS_ID=" + frmFind.id_users);
+                DataTable dt = connect.getDataTable("SELECT ACCOUNT_ID,ACCOUNT_USERS_ID,ACCOUNT_CARD_ID,ACCOUNT_PASSWORD FROM ACCOUNTS WHERE ACCOUNT_USERS_ID='" + frmFind.id_users + "'");
                 dataGridView1.DataSource = dt;
             }
 
@@ -39,6 +39,7 @@ namespace Theme
         {
             GetData(1);
             GetData(2);
+            txtIDCard.Text = dataGridView1.Rows[0].Cells[2].Value.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -49,6 +50,17 @@ namespace Theme
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int vitri=e.RowIndex;
+        }
+
+        private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            txtIDCard.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Cards card = new Cards(txtIDCard.Text, "CSD");
+            card.Update();
         }
     }
 }

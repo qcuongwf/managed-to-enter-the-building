@@ -69,11 +69,13 @@ namespace Process
             phone = pPhone;
             email = pEmail;
         }
+        ConnectSql connect;
         void cmd(int node)
         {
-            ConnectSql connect = new ConnectSql();
+            connect = new ConnectSql();
             SqlCommand cmd = new SqlCommand("STORE_USERS", connect.getConnection);
             cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@NODE", SqlDbType.Int).Value = node;
             cmd.Parameters.Add("@ID", SqlDbType.Char).Value = id;
             cmd.Parameters.Add("@NAME", SqlDbType.NVarChar).Value = name;
             cmd.Parameters.Add("@TYPE", SqlDbType.Char).Value = type;
@@ -86,6 +88,14 @@ namespace Process
         public void AddUser()
         {
             cmd(1);
+        }
+        public void Update()
+        {
+            cmd(2);
+        }
+        void LoadUser(string id)
+        {
+            DataSet data = connect.getDataset("SELECT * FROM USERS WHERE USERS_ID=" + id);
         }
     }
 }

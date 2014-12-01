@@ -69,10 +69,9 @@ namespace Process
             phone = pPhone;
             email = pEmail;
         }
-        ConnectSql connect;
         void cmd(int node)
         {
-            connect = new ConnectSql();
+            ConnectSql connect = new ConnectSql();
             SqlCommand cmd = new SqlCommand("STORE_USERS", connect.getConnection);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@ID", SqlDbType.Char).Value = id;
@@ -87,10 +86,6 @@ namespace Process
         public void AddUser()
         {
             cmd(1);
-        }
-        void LoadUser(string id)
-        {
-            DataSet data = connect.getDataset("SELECT * FROM USERS WHERE USERS_ID=" + id);
         }
     }
 }

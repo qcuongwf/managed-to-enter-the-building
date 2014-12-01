@@ -43,9 +43,12 @@
             this.lbIdcard = new System.Windows.Forms.Label();
             this.btnIn = new System.Windows.Forms.Button();
             this.gKh = new System.Windows.Forms.GroupBox();
-            this.txtIc = new System.Windows.Forms.TextBox();
+            this.txtIndentity = new System.Windows.Forms.TextBox();
             this.lbIc = new System.Windows.Forms.Label();
             this.gT = new System.Windows.Forms.GroupBox();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.txtStatus = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.gKh.SuspendLayout();
             this.gT.SuspendLayout();
             this.SuspendLayout();
@@ -60,7 +63,6 @@
             this.lbIdcus.Size = new System.Drawing.Size(87, 21);
             this.lbIdcus.TabIndex = 0;
             this.lbIdcus.Text = "Mã Khách";
-            this.lbIdcus.Click += new System.EventHandler(this.label1_Click);
             // 
             // lbName
             // 
@@ -105,7 +107,6 @@
             this.lbEmail.Size = new System.Drawing.Size(51, 21);
             this.lbEmail.TabIndex = 4;
             this.lbEmail.Text = "Email";
-            this.lbEmail.Click += new System.EventHandler(this.label5_Click);
             // 
             // txtPhone
             // 
@@ -122,7 +123,6 @@
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(124, 29);
             this.txtAddress.TabIndex = 8;
-            this.txtAddress.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // txtName
             // 
@@ -139,7 +139,6 @@
             this.txtIdcustomer.Name = "txtIdcustomer";
             this.txtIdcustomer.Size = new System.Drawing.Size(124, 29);
             this.txtIdcustomer.TabIndex = 10;
-            this.txtIdcustomer.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // txtEmail
             // 
@@ -152,7 +151,7 @@
             // txtIdcard
             // 
             this.txtIdcard.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdcard.Location = new System.Drawing.Point(267, 19);
+            this.txtIdcard.Location = new System.Drawing.Point(170, 19);
             this.txtIdcard.Name = "txtIdcard";
             this.txtIdcard.Size = new System.Drawing.Size(124, 29);
             this.txtIdcard.TabIndex = 14;
@@ -162,7 +161,7 @@
             this.lbIdcard.AutoSize = true;
             this.lbIdcard.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbIdcard.ForeColor = System.Drawing.Color.White;
-            this.lbIdcard.Location = new System.Drawing.Point(174, 26);
+            this.lbIdcard.Location = new System.Drawing.Point(77, 26);
             this.lbIdcard.Name = "lbIdcard";
             this.lbIdcard.Size = new System.Drawing.Size(68, 21);
             this.lbIdcard.TabIndex = 13;
@@ -177,7 +176,7 @@
             this.btnIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIn.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIn.ForeColor = System.Drawing.Color.White;
-            this.btnIn.Location = new System.Drawing.Point(207, 244);
+            this.btnIn.Location = new System.Drawing.Point(94, 253);
             this.btnIn.Name = "btnIn";
             this.btnIn.Size = new System.Drawing.Size(180, 73);
             this.btnIn.TabIndex = 15;
@@ -188,7 +187,7 @@
             // gKh
             // 
             this.gKh.BackColor = System.Drawing.Color.Transparent;
-            this.gKh.Controls.Add(this.txtIc);
+            this.gKh.Controls.Add(this.txtIndentity);
             this.gKh.Controls.Add(this.lbIc);
             this.gKh.Controls.Add(this.txtEmail);
             this.gKh.Controls.Add(this.txtIdcustomer);
@@ -206,13 +205,13 @@
             this.gKh.TabIndex = 16;
             this.gKh.TabStop = false;
             // 
-            // txtIc
+            // txtIndentity
             // 
-            this.txtIc.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIc.Location = new System.Drawing.Point(439, 87);
-            this.txtIc.Name = "txtIc";
-            this.txtIc.Size = new System.Drawing.Size(124, 29);
-            this.txtIc.TabIndex = 14;
+            this.txtIndentity.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIndentity.Location = new System.Drawing.Point(439, 87);
+            this.txtIndentity.Name = "txtIndentity";
+            this.txtIndentity.Size = new System.Drawing.Size(124, 29);
+            this.txtIndentity.TabIndex = 14;
             // 
             // lbIc
             // 
@@ -228,27 +227,64 @@
             // gT
             // 
             this.gT.BackColor = System.Drawing.Color.Transparent;
+            this.gT.Controls.Add(this.txtStatus);
+            this.gT.Controls.Add(this.label1);
             this.gT.Controls.Add(this.txtIdcard);
             this.gT.Controls.Add(this.lbIdcard);
-            this.gT.Location = new System.Drawing.Point(12, 149);
+            this.gT.Location = new System.Drawing.Point(13, 158);
             this.gT.Name = "gT";
             this.gT.Size = new System.Drawing.Size(583, 77);
             this.gT.TabIndex = 17;
             this.gT.TabStop = false;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(356, 253);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(180, 73);
+            this.btnCancel.TabIndex = 18;
+            this.btnCancel.Text = "Hủy Bỏ";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            // 
+            // txtStatus
+            // 
+            this.txtStatus.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStatus.Location = new System.Drawing.Point(406, 20);
+            this.txtStatus.Name = "txtStatus";
+            this.txtStatus.Size = new System.Drawing.Size(124, 29);
+            this.txtStatus.TabIndex = 16;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(313, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(91, 21);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Trạng Thái";
             // 
             // FrmChitiet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(614, 331);
+            this.ClientSize = new System.Drawing.Size(617, 350);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.gT);
             this.Controls.Add(this.gKh);
             this.Controls.Add(this.btnIn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmChitiet";
             this.Text = "Form2";
-            this.Load += new System.EventHandler(this.FrmChitiet_Load);
             this.gKh.ResumeLayout(false);
             this.gKh.PerformLayout();
             this.gT.ResumeLayout(false);
@@ -274,7 +310,10 @@
         private System.Windows.Forms.Button btnIn;
         private System.Windows.Forms.GroupBox gKh;
         private System.Windows.Forms.GroupBox gT;
-        private System.Windows.Forms.TextBox txtIc;
+        private System.Windows.Forms.TextBox txtIndentity;
         private System.Windows.Forms.Label lbIc;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.TextBox txtStatus;
+        private System.Windows.Forms.Label label1;
     }
 }

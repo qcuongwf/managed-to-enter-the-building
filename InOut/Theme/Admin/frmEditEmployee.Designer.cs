@@ -194,7 +194,6 @@
             this.btnEdit.TabIndex = 15;
             this.btnEdit.Text = "Chỉnh Sửa";
             this.btnEdit.UseVisualStyleBackColor = false;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // frmEditEmployee
             // 
@@ -208,7 +207,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmEditEmployee";
             this.Text = "frmEditEmployee";
-            this.Load += new System.EventHandler(this.frmEditEmployee_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

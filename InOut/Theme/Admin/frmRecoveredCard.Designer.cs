@@ -39,10 +39,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtIDCard = new System.Windows.Forms.TextBox();
+            this.txtUser = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtIDCard = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -65,7 +65,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtName);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txtIDCard);
+            this.groupBox1.Controls.Add(this.txtUser);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
@@ -162,24 +162,24 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Mã";
             // 
-            // txtIDCard
+            // txtUser
             // 
-            this.txtIDCard.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIDCard.Location = new System.Drawing.Point(164, 40);
-            this.txtIDCard.Name = "txtIDCard";
-            this.txtIDCard.Size = new System.Drawing.Size(172, 35);
-            this.txtIDCard.TabIndex = 3;
+            this.txtUser.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUser.Location = new System.Drawing.Point(164, 40);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(172, 35);
+            this.txtUser.TabIndex = 3;
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.txtIDCard);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.White;
             this.groupBox2.Location = new System.Drawing.Point(407, 162);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(378, 140);
+            this.groupBox2.Size = new System.Drawing.Size(458, 140);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Liên kết thẻ";
@@ -195,13 +195,13 @@
             this.label6.TabIndex = 4;
             this.label6.Text = "Số thẻ:";
             // 
-            // textBox4
+            // txtIDCard
             // 
-            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(91, 31);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(226, 35);
-            this.textBox4.TabIndex = 5;
+            this.txtIDCard.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIDCard.Location = new System.Drawing.Point(91, 31);
+            this.txtIDCard.Name = "txtIDCard";
+            this.txtIDCard.Size = new System.Drawing.Size(355, 35);
+            this.txtIDCard.TabIndex = 5;
             // 
             // button2
             // 
@@ -235,6 +235,7 @@
             this.button1.TabIndex = 16;
             this.button1.Text = "Thu Hồi Thẻ";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox3
             // 
@@ -243,7 +244,7 @@
             this.groupBox3.ForeColor = System.Drawing.Color.White;
             this.groupBox3.Location = new System.Drawing.Point(407, 12);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(378, 127);
+            this.groupBox3.Size = new System.Drawing.Size(458, 127);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "thông tin về tài khoản";
@@ -253,15 +254,16 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 20);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(354, 89);
+            this.dataGridView1.Size = new System.Drawing.Size(434, 89);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick_1);
             // 
             // frmRecoveredCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(807, 386);
+            this.ClientSize = new System.Drawing.Size(891, 386);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
@@ -293,10 +295,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtIDCard;
+        private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtIDCard;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox3;

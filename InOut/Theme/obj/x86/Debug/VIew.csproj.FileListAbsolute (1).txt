@@ -26,10 +26,6 @@ E:\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.FrmChitiet.
 E:\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\View.csproj.GenerateResource.Cache
 C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.exe
 C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.pdb
-C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\bin\Debug\Theme.exe
-C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\bin\Debug\Theme.pdb
-C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\bin\Debug\Process.dll
-C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\bin\Debug\Process.pdb
 C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\View.csprojResolveAssemblyReference.cache
 C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmAdmin.resources
 C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmCapThe.resources

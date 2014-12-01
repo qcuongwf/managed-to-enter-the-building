@@ -47,8 +47,16 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnOk = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtPasword = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtAccountID = new System.Windows.Forms.TextBox();
+            this.cmbStatusCard = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtID
@@ -205,13 +213,15 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.cmbStatusCard);
+            this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.cmbCard);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(12, 330);
+            this.groupBox2.Location = new System.Drawing.Point(383, 156);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(355, 77);
+            this.groupBox2.Size = new System.Drawing.Size(355, 107);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Liên kết thẻ";
@@ -246,7 +256,7 @@
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(207, 420);
+            this.btnCancel.Location = new System.Drawing.Point(549, 279);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(160, 45);
             this.btnCancel.TabIndex = 8;
@@ -265,7 +275,7 @@
             this.btnOk.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOk.ForeColor = System.Drawing.Color.White;
             this.btnOk.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOk.Location = new System.Drawing.Point(12, 420);
+            this.btnOk.Location = new System.Drawing.Point(383, 279);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(160, 45);
             this.btnOk.TabIndex = 7;
@@ -273,12 +283,91 @@
             this.btnOk.UseVisualStyleBackColor = false;
             this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Controls.Add(this.txtPasword);
+            this.groupBox3.Controls.Add(this.label13);
+            this.groupBox3.Controls.Add(this.txtAccountID);
+            this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox3.ForeColor = System.Drawing.Color.White;
+            this.groupBox3.Location = new System.Drawing.Point(383, 12);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(355, 138);
+            this.groupBox3.TabIndex = 9;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Thông tin tài khoản thẻ";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(6, 89);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(110, 27);
+            this.label12.TabIndex = 2;
+            this.label12.Text = "Mật khẩu:";
+            // 
+            // txtPasword
+            // 
+            this.txtPasword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPasword.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPasword.ForeColor = System.Drawing.Color.Black;
+            this.txtPasword.Location = new System.Drawing.Point(155, 81);
+            this.txtPasword.Name = "txtPasword";
+            this.txtPasword.Size = new System.Drawing.Size(181, 35);
+            this.txtPasword.TabIndex = 1;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(6, 48);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(79, 27);
+            this.label13.TabIndex = 2;
+            this.label13.Text = "Số TK:";
+            // 
+            // txtAccountID
+            // 
+            this.txtAccountID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAccountID.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAccountID.ForeColor = System.Drawing.Color.Black;
+            this.txtAccountID.Location = new System.Drawing.Point(155, 40);
+            this.txtAccountID.Name = "txtAccountID";
+            this.txtAccountID.Size = new System.Drawing.Size(181, 35);
+            this.txtAccountID.TabIndex = 0;
+            // 
+            // cmbStatusCard
+            // 
+            this.cmbStatusCard.FormattingEnabled = true;
+            this.cmbStatusCard.Location = new System.Drawing.Point(178, 74);
+            this.cmbStatusCard.Name = "cmbStatusCard";
+            this.cmbStatusCard.Size = new System.Drawing.Size(147, 21);
+            this.cmbStatusCard.TabIndex = 12;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(6, 67);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(166, 27);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "Trình trạng thẻ: ";
+            // 
             // frmCapThe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(386, 481);
+            this.ClientSize = new System.Drawing.Size(762, 348);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.groupBox2);
@@ -290,6 +379,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -314,5 +405,12 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtIndentity;
         private System.Windows.Forms.ComboBox cmbCard;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtPasword;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtAccountID;
+        private System.Windows.Forms.ComboBox cmbStatusCard;
+        private System.Windows.Forms.Label label8;
     }
 }

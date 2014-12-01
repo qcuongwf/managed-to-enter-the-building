@@ -38,6 +38,11 @@ namespace Process
             cmd.Parameters.Add("@NAME", SqlDbType.NVarChar).Value = name;
             cmd.ExecuteNonQuery();
         }
+        public DataTable getDataTableStatusCard()
+        {
+            ConnectSql connect=new ConnectSql();
+            return connect.getDataTable("SELECT CARD_STATUS_ID,CARD_STATUS_NAME from CARD_STATUS");
+        }
         public void Add()
         {
             Command(1);

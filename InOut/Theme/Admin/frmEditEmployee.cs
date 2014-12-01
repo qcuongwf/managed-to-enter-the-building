@@ -6,7 +6,6 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Process;
 
 namespace Theme
 {
@@ -20,14 +19,6 @@ namespace Theme
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-        private void frmEditEmployee_Load(object sender, EventArgs e)
-        {
-        }
-
-        private void btnEdit_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

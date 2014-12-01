@@ -64,5 +64,15 @@ namespace Process
 			da.Fill(dt);
 			return dt;
 		}
+        public string getLastID(string columName, string tableName)
+        {
+            string stringSQL = "SELECT TOP 1(" + columName + ") FROM " + tableName + " ORDER BY " + columName + " DESC";
+            string a = "";
+            DataTable dt = getDataTable(stringSQL);
+            DataRow dt2 = dt.Rows[dt.Columns.Count-1];
+            a = dt2[0].ToString();
+            return a;
+
+        }
     }
 }

@@ -16,22 +16,31 @@ namespace Theme
         {
             InitializeComponent();
         }
-
+        ConnectSql connect = new ConnectSql();
+        StatusOfCard statusCard = new StatusOfCard();
+        string cardID;
+        void getCardID()
+        {
+            DataTable dt = connect.getDataTable("select ACCOUNT_ID,ACCOUNT_CARD_ID from ACCOUNTS where ACCOUNT_USERS_ID='"+frmFind.id_users+"'");
+            DataRow dt2 = dt.Rows[0];
+            cardID = dt2[1].ToString();
+        }
         void GetData(int node)
         {
-            ConnectSql connect = new ConnectSql();
+            
             if (node == 1)
             {
-                DataTable dt = connect.getDataTable("select * from USERS where USERS_ID=" + frmFind.id_users);
+                DataTable dt = connect.getDataTable("SELECT USERS_ID,USERS_NAME,USERS_IDENTITY,USERS_ADDRESS,USERS_PHONE,USERS_EMAIL FROM USERS WHERE USERS_ID='" + frmFind.id_users + "' ");
                 DataRow dtrow = dt.Rows[0];
-                txtID.Text = dtrow[2].ToString();
-                txtIdentity.Text = dtrow[3].ToString();
+                txtID.Text = dtrow[0].ToString();
+                txtName.Text = dtrow[1].ToString();
+                txtIdentity.Text = dtrow[2].ToString();
+                txtAddress.Text = dtrow[3].ToString();
                 txtIDCard.Text = frmFind.id_users;
             }
             else
             {
-                DataTable dt = connect.getDataTable("SELECT CARD_STATUS_ID,CARD_STATUS_NAME from CARD_STATUS");
-                comboBox1.DataSource = dt;
+                comboBox1.DataSource = statusCard.getDataTableStatusCard();
                 comboBox1.DisplayMember = "CARD_STATUS_NAME";
                 comboBox1.ValueMember = "CARD_STATUS_ID";
             }
@@ -39,8 +48,9 @@ namespace Theme
 
         private void frmKhaiBaoTheHuMat_Load(object sender, EventArgs e)
         {
-            GetData(1);
-            GetData(2);
+                GetData(1);
+                GetData(2);
+                getCardID();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -52,7 +62,7 @@ namespace Theme
         {
             try
             {
-                Cards card = new Cards(txtIDCard.Text, comboBox1.SelectedValue.ToString());
+                Cards card = new Cards(cardID, comboBox1.SelectedValue.ToString());
                 card.Update();
             }
             catch (Exception ex)

@@ -44,10 +44,9 @@ namespace Process
             cardID = pCardID;
             password = pPassword;
         }
-        ConnectSql connect;
         void Command()
         {
-             connect= new ConnectSql();
+            ConnectSql connect = new ConnectSql();
             SqlCommand cmd = new SqlCommand("STORE_ACCOUNTS", connect.getConnection);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@ID", SqlDbType.Char).Value = id;
