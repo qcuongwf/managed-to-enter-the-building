@@ -32,8 +32,21 @@ namespace Theme.Protector
                         break;
                     case "CSD": MessageBox.Show("Thẻ " + txtAddress.Text + " chưa khai báo", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error); 
                         break;
-                    case "DSD": transaction = new Transactions("", account.GetAccountID(txtAddress.Text), txtAddress.Text, "IN", "");
-                    transaction.Insert();
+                    case "DSD":
+                        {
+                            transaction = new Transactions("", account.GetAccountID(txtAddress.Text), txtAddress.Text, "IN", "");
+                            if (transaction.Insert())
+                            {
+                                
+                                Users user = new Users();
+                                if (user.UserFormCard(txtAddress.Text))
+                                {
+                                    frmMessageBox frm = new frmMessageBox("Thông báo", "Nhân viên " + user.name + " đã vào thành công", 5);
+                                    frm.Show();
+                                }
+                            }
+
+                        }
                         break;
                 }
             }
@@ -41,6 +54,16 @@ namespace Theme.Protector
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        void time_Tick(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        void time(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }

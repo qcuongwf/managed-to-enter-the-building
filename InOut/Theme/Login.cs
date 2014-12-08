@@ -60,7 +60,7 @@ namespace Theme
             if (dtDangNhap.Rows.Count == 0)
             {
                 f = false;
-                MessageBox.Show(ms, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBoxCustom.MessageBoxCustom.Show(ms, "Lỗi", MessageBoxCustom.MessageBoxCustom.enumMessageIcon.Error, MessageBoxCustom.MessageBoxCustom.enumMessageButton.OK);
                 txtPassword.Text = "";
                 txtPassword.Focus();
             }
@@ -73,8 +73,7 @@ namespace Theme
             bool f = true;
             if ((txt.Text.Length == 0) || (txt.Text.Trim() == ""))
             {
-                f = false;
-                MessageBox.Show(ms, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBoxCustom.MessageBoxCustom.Show(ms, "Lỗi", MessageBoxCustom.MessageBoxCustom.enumMessageIcon.Error, MessageBoxCustom.MessageBoxCustom.enumMessageButton.OK);
                 txt.Text = "";
                 txt.Focus();
             }
@@ -133,6 +132,26 @@ namespace Theme
         {
             if (e.KeyChar == 13)//nhấn enter
                 btnLogin.PerformClick();//gọi hàm đăng nhập
+        }
+
+        Controller.CheckError error = new Controller.CheckError();
+        private void txtAccount_TextChanged(object sender, EventArgs e)
+        {
+            if(!error.OverNubmer(txtAccount.Text, 10))
+            {
+                MessageBox.Show("Tài khoản không được quá 10 kí tự");
+                txtAccount.Focus();
+            }
+
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+            if (!error.OverNubmer(txtPassword.Text,100))
+            {
+                MessageBox.Show("mật khẩu không được quá 100 kí tự");
+                txtAccount.Focus();
+            }
         }
     }
 }

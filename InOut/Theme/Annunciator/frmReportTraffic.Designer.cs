@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReportTheHuMat));
             this.label1 = new System.Windows.Forms.Label();
-            this.txtIDCard = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -46,17 +46,6 @@
             this.label1.Size = new System.Drawing.Size(154, 27);
             this.label1.TabIndex = 4;
             this.label1.Text = "Chọn thời gian";
-            // 
-            // txtIDCard
-            // 
-            this.txtIDCard.BackColor = System.Drawing.Color.SteelBlue;
-            this.txtIDCard.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtIDCard.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIDCard.ForeColor = System.Drawing.Color.White;
-            this.txtIDCard.Location = new System.Drawing.Point(184, 54);
-            this.txtIDCard.Name = "txtIDCard";
-            this.txtIDCard.Size = new System.Drawing.Size(172, 28);
-            this.txtIDCard.TabIndex = 5;
             // 
             // button1
             // 
@@ -86,18 +75,25 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "Báo cáo lưu lượng ra vào";
             // 
-            // frmReportTraffic
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(184, 61);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 18;
+            // 
+            // frmReportTheHuMat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(412, 159);
+            this.ClientSize = new System.Drawing.Size(806, 213);
             this.ControlBox = false;
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtIDCard);
-            this.Name = "frmReportTraffic";
+            this.Name = "frmReportTheHuMat";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -106,8 +102,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtIDCard;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

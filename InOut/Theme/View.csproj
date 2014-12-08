@@ -152,6 +152,12 @@
     <Compile Include="Login.designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="MessageBoxCustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxCustom.designer.cs">
+      <DependentUpon>MessageBoxCustom.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Protector\frmKhach-in.cs">
@@ -165,6 +171,12 @@
     </Compile>
     <Compile Include="Protector\frmKhach-out.Designer.cs">
       <DependentUpon>frmKhach-out.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Protector\frmMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Protector\frmMessageBox.Designer.cs">
+      <DependentUpon>frmMessageBox.cs</DependentUpon>
     </Compile>
     <Compile Include="Protector\frmSecury.cs">
       <SubType>Form</SubType>
@@ -241,6 +253,9 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxCustom.resx">
+      <DependentUpon>MessageBoxCustom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -256,6 +271,9 @@
     <EmbeddedResource Include="Protector\frmKhach-out.resx">
       <DependentUpon>frmKhach-out.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Protector\frmMessageBox.resx">
+      <DependentUpon>frmMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Protector\frmSecury.resx">
       <DependentUpon>frmSecury.cs</DependentUpon>
     </EmbeddedResource>
@@ -268,6 +286,7 @@
     <EmbeddedResource Include="Protector\frmStaffOut.resx">
       <DependentUpon>frmStaffOut.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram2.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -290,6 +309,25 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Controller.dll" />
+    <Content Include="bin\Debug\Controller.pdb" />
+    <Content Include="bin\Debug\msgimg\error.jpg" />
+    <Content Include="bin\Debug\Process %281%29.pdb" />
+    <Content Include="bin\Debug\Process.dll" />
+    <Content Include="bin\Debug\Process.pdb" />
+    <Content Include="bin\Debug\Theme %281%29.exe" />
+    <Content Include="bin\Debug\Theme.exe" />
+    <Content Include="bin\Debug\Theme.pdb" />
+    <Content Include="bin\Debug\Theme.vshost %281%29.exe" />
+    <Content Include="bin\Debug\Theme.vshost.exe" />
+    <Content Include="bin\Debug\Theme[Conflict 1].exe" />
+    <Content Include="bin\Debug\Theme[Conflict 1].pdb" />
+    <Content Include="bin\Debug\Theme[Conflict 2].exe" />
+    <Content Include="bin\Debug\Theme[Conflict 2].pdb" />
+    <Content Include="bin\Debug\Theme[Conflict].exe" />
+    <Content Include="bin\Debug\Theme[Conflict].pdb" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

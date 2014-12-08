@@ -137,6 +137,7 @@ namespace Process
            if (error.isExists("SELECT COUNT(*) FROM USERS WHERE USERS_ID LIKE '"+type+"%'")) return true;
           else return false;
         }
+        //Lay gia tri id user cuoi cung theo nhan vien
         public string getLastUserID()
         {
             myConnect = new ConnectSql();
@@ -144,6 +145,20 @@ namespace Process
             SqlCommand cmd = new SqlCommand(stringCommand, myConnect.getConnection);
             string count = (string)cmd.ExecuteScalar();
             return count;
+        }
+        //lay thong tin user tu the
+        public bool UserFormCard(string idCard)
+        {
+            bool result = false;
+            myConnect = new ConnectSql();
+            string stringCommand = "select USERS_ID from USERS, ACCOUNTS where ACCOUNT_CARD_ID=@ID AND ACCOUNT_USERS_ID=USERS_ID";
+            myConnect.OpenConnection();
+            SqlCommand command = new SqlCommand(stringCommand, myConnect.getConnection);
+            command.Parameters.Add("@ID", SqlDbType.Char).Value = idCard;
+            string idUser = (string)command.ExecuteScalar();
+            if (idUser == null) result = false; else { result = true; LoadUserFromID(idUser); }
+            return result;
+            
         }
     }
 }

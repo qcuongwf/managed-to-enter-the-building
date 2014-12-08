@@ -65,8 +65,8 @@ namespace Theme
             cmbCard.ValueMember = "CARD_ID";
             if (data.Rows.Count == 0)
             {
-                DialogResult dia = new System.Windows.Forms.DialogResult(); 
-                dia= MessageBox.Show("Hiện thẻ chưa sử dụng đã hết\n Bạn có muốn nhập thêm thẻ không?", "Hết thẻ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult dia = new System.Windows.Forms.DialogResult();
+                dia = MessageBoxCustom.MessageBoxCustom.Show("Hiện thẻ chưa sử dụng đã hết\n Bạn có muốn nhập thêm thẻ không?", "Hết thẻ", MessageBoxCustom.MessageBoxCustom.enumMessageIcon.Question, MessageBoxCustom.MessageBoxCustom.enumMessageButton.YesNo);
                 if (dia == DialogResult.Yes)
                 {
                     frmNhapThe frm = new frmNhapThe();

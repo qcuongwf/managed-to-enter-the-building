@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNhapThe));
             this.label1 = new System.Windows.Forms.Label();
             this.txtIDCard = new System.Windows.Forms.TextBox();
@@ -36,6 +37,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.cmbTypeOfCard = new System.Windows.Forms.ComboBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblNotification = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -81,7 +84,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(160, 151);
+            this.button2.Location = new System.Drawing.Point(160, 162);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(142, 40);
             this.button2.TabIndex = 15;
@@ -99,7 +102,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(12, 151);
+            this.button1.Location = new System.Drawing.Point(12, 162);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(142, 40);
             this.button1.TabIndex = 14;
@@ -131,13 +134,31 @@
             this.cmbTypeOfCard.Size = new System.Drawing.Size(135, 35);
             this.cmbTypeOfCard.TabIndex = 17;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lblNotification
+            // 
+            this.lblNotification.AutoSize = true;
+            this.lblNotification.BackColor = System.Drawing.Color.Transparent;
+            this.lblNotification.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNotification.ForeColor = System.Drawing.Color.Red;
+            this.lblNotification.Location = new System.Drawing.Point(69, 137);
+            this.lblNotification.Name = "lblNotification";
+            this.lblNotification.Size = new System.Drawing.Size(0, 20);
+            this.lblNotification.TabIndex = 18;
+            // 
             // frmNhapThe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(320, 211);
+            this.ClientSize = new System.Drawing.Size(328, 232);
             this.ControlBox = false;
+            this.Controls.Add(this.lblNotification);
             this.Controls.Add(this.cmbTypeOfCard);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button2);
@@ -162,5 +183,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cmbTypeOfCard;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lblNotification;
     }
 }
