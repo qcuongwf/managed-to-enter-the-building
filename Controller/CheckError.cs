@@ -13,7 +13,7 @@ namespace Controller
         public bool OverNubmer(string txt,int number)
         {
             bool result = true;
-            if (txt.Length >= number)
+            if (txt.Length > number)
             {
                 result = false;
             }
@@ -41,5 +41,6 @@ namespace Controller
         {
             return txt.Length == 0 ? false : true;
         }
+        
     }
 }

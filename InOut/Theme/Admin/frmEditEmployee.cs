@@ -21,31 +21,27 @@ namespace Theme
         {
             this.Close();
         }
-        //biên chứa mã số nhân viên
-        string idUser = "";
-        Users user;
-
+        ConnectSql connect = new ConnectSql();
         private void frmEditEmployee_Load(object sender, EventArgs e)
         {
-            idUser = frmFind.id_users;
-            //gán thông tin nhân viên vào textbox
-            txtIDCard.Text = idUser;
-            //vô hiệu textbox txtIDCard
-            txtIDCard.Enabled = false;
-            this.user = new Users();
-            user.LoadUserFromID(idUser);
-            txtName.Text = user.name;
-            txtPhone.Text = user.phone;
-            txtAddress.Text = user.address;
-            txtIndentity.Text=user.indentity;
-            txtEmail.Text=user.email;
+            //lấy dữ liệu từ database bảng USERS và ACCOUNT đổ về Datatable
+            DataTable dt = connect.getDataTable("SELECT USERS_ID,USERS_NAME,USERS_IDENTITY,USERS_ADDRESS,USERS_PHONE,USERS_EMAIL FROM USERS WHERE USERS_ID='" + frmFind.id_users + "'");
+            //đỗ dữ liệu từ DataTable dt sang DataRow dtrow
+            DataRow dtrow = dt.Rows[0];
+            //gán dl từ dtrow vào từng textbox
+            txtUerID.Text = dtrow[0].ToString();
+            txtName.Text = dtrow[1].ToString();
+            txtIndentity.Text = dtrow[2].ToString();
+            txtAddress.Text = dtrow[3].ToString();
+            txtPhone.Text = dtrow[4].ToString();
+            txtEmail.Text = dtrow[5].ToString();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-                this.user = new Users(txtIDCard.Text, "NHANVIEN", txtName.Text, txtIndentity.Text, txtAddress.Text, txtPhone.Text, txtEmail.Text);
-                user.Update();
-                this.Close();
+            Users user = new Users(txtUerID.Text, "NHANVIEN", txtName.Text, txtIndentity.Text, txtAddress.Text, txtPhone.Text, txtEmail.Text);
+            user.Update();
+            this.Close();
         }
     }
 }

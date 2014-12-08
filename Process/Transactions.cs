@@ -53,7 +53,7 @@ namespace Process
             time = DateTime.Now;
             type = pType;
         }
-        public void Insert()
+        public bool Insert()
         {
             ConnectSql myConnect=new ConnectSql();
             string stringSQL="INSERT INTO TRANSACTIONS(TRANS_ACCOUNT_ID,TRANS_CARD_ID,TRANS_TIME,TRANS_TYPE) VALUES(@accountID, @cardId, @time, @type)";
@@ -63,8 +63,9 @@ namespace Process
             command.Parameters.Add("@cardId",SqlDbType.Char).Value=cardID;
             command.Parameters.Add("@time",SqlDbType.DateTime).Value=time.ToString("yyyy-MM-dd HH:mm:ss");
             command.Parameters.Add("@type",SqlDbType.Char).Value=type;
-            command.ExecuteNonQuery();
+            int i=command.ExecuteNonQuery();
             myConnect.CloseConnection();
+            return i==0?false:true;
         }
     }
 }

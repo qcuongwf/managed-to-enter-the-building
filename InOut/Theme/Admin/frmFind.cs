@@ -17,13 +17,15 @@ namespace Theme
             InitializeComponent();
             dataGridView1.ReadOnly = true;
         }
+
         public int location;
-        public static string id_users = "";
+        public static string id_users=null;
         public static int node=1;
         ConnectSql connect = new ConnectSql();
+
         public void textBox1_TextChanged(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = connect.getDataTable("select * from USERS where USERS_NAME like '%" + textBox1.Text + "%' AND USERS_TYPE='NHANVIEN'");
+            dataGridView1.DataSource = connect.getDataTable("select * from USERS where USERS_NAME like '%"+textBox1.Text+"%'");
         }
 
         public void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -33,27 +35,36 @@ namespace Theme
 
         public void openForm()
         {
-            id_users = dataGridView1.Rows[location].Cells[0].Value.ToString();
-            if (node == 1)
+            if (location != -1)
             {
-                frmKhaiBaoTheHuMat frm = new frmKhaiBaoTheHuMat();
-                frm.ShowDialog(this);
-            }
-            else if (node == 2)
-            {
-                frmRecoveredCard frm = new frmRecoveredCard();
-                frm.ShowDialog(this);
-            }
-            else if (node == 3)
-            {
-                frmEditEmployee frm = new frmEditEmployee();
-                frm.ShowDialog(this);
-            }
-            else
-            {
-                frmReissuedCard frm = new frmReissuedCard();
-                frm.ShowDialog(this);
-               
+                id_users = dataGridView1.Rows[location].Cells[0].Value.ToString();
+
+                if (node == 1)
+                {
+                    frmKhaiBaoTheHuMat frm = new frmKhaiBaoTheHuMat();
+                    frm.ShowDialog(this);
+                }
+                else if (node == 2)
+                {
+                    frmRecoveredCard frm = new frmRecoveredCard();
+                    frm.ShowDialog(this);
+                }
+                else if (node == 3)
+                {
+                    frmEditEmployee frm = new frmEditEmployee();
+                    frm.ShowDialog(this);
+                }
+                else if (node == 4)
+                {
+                    frmReissuedCard frm = new frmReissuedCard();
+                    frm.ShowDialog(this);
+                }
+                else
+                {
+                    frmCapThe frm = new frmCapThe();
+                    frm.ShowDialog(this);
+                }
+                dataGridView1.DataSource = connect.getDataTable("select * from USERS");
             }
         }
 
@@ -65,6 +76,11 @@ namespace Theme
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             openForm();
+        }
+
+        private void frmFind_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = connect.getDataTable("select * from USERS");
         }
     }
 }

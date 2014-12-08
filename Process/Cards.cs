@@ -100,6 +100,7 @@ namespace Process
             if (a == null) a = "";
             return a;
         }
+
         public string GetCardID(string idAccount)
         {
             myConnect = new ConnectSql();
@@ -111,6 +112,20 @@ namespace Process
             a = (string)command.ExecuteScalar();
             if (a == null) a = "";
             return a;
+        }
+
+        public bool isata(string idcard)
+        {
+            myConnect = new ConnectSql();
+            bool request = true;
+            int count;
+            string stringCommand = "select count(card_id) from CARDS where CARD_ID=@ID";
+            SqlCommand command = new SqlCommand(stringCommand, myConnect.getConnection);
+            command.Parameters.Add("@ID", SqlDbType.Char).Value = idcard;
+            count= (int)command.ExecuteScalar();
+            if (count == 0) request = false;
+            else request = true;
+            return request;
         }
     }
 }
