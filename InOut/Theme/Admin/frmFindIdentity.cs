@@ -6,7 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Process;
+
+using Model;
+
 namespace Theme.Admin
 {
     public partial class frmFindIdentity : Form
@@ -30,7 +32,13 @@ namespace Theme.Admin
 
         private void dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            dataGridView.Rows[e.RowIndex].Cells[0].Value.ToString();
+            indentity = dataGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
+        }
+
+        private void dataGridView_DoubleClick(object sender, EventArgs e)
+        {
+            frmCapThe frm = new frmCapThe();
+            frm.ShowDialog(this);
         }
     }
 }

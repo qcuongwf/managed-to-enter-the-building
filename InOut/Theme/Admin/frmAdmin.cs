@@ -41,10 +41,10 @@ namespace Theme
 
         private void button7_Click(object sender, EventArgs e)
         {
-
-            frmCapThe frm = new frmCapThe();
+            frmCapThe frm= new frmCapThe();
+            //Admin.frmFindIdentity frm = new Admin.frmFindIdentity();
             
-            frm.ShowDialog(this);
+            DialogResult dr = frm.ShowDialog(this);
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -73,6 +73,11 @@ namespace Theme
             frmFind frm = new frmFind();
             frmFind.node = 3;
             frm.ShowDialog(this);
+        }
+
+        private void frmAdmin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -360,6 +360,7 @@
             this.Controls.Add(this.btnNhapThe);
             this.Name = "frmAdmin";
             this.Text = "frmAdmin";
+            this.Load += new System.EventHandler(this.frmAdmin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

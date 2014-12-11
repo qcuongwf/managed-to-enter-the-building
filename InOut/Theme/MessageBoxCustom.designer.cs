@@ -44,9 +44,9 @@
             this.lblText.BackColor = System.Drawing.Color.Transparent;
             this.lblText.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblText.ForeColor = System.Drawing.Color.White;
-            this.lblText.Location = new System.Drawing.Point(94, 9);
+            this.lblText.Location = new System.Drawing.Point(120, 20);
             this.lblText.Name = "lblText";
-            this.lblText.Size = new System.Drawing.Size(306, 74);
+            this.lblText.Size = new System.Drawing.Size(280, 40);
             this.lblText.TabIndex = 2;
             this.lblText.Text = "label1";
             // 
@@ -55,9 +55,9 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(20, 20);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(76, 71);
+            this.pictureBox1.Size = new System.Drawing.Size(80, 80);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
@@ -76,7 +76,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(412, 128);
+            this.ClientSize = new System.Drawing.Size(424, 121);
             this.Controls.Add(this.lblText);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

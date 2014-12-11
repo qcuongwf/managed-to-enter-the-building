@@ -20,5 +20,16 @@ namespace Theme
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Theme.frmReportTheHuMat frm = new frmReportTheHuMat();
+            frm.ShowDialog(this);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

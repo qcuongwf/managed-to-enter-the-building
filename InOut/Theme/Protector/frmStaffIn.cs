@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Process;
+using Model;
 
 namespace Theme.Protector
 {
@@ -54,16 +54,6 @@ namespace Theme.Protector
             {
                 MessageBox.Show(ex.ToString());
             }
-        }
-
-        void time_Tick(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        void time(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
         }
     }
 }

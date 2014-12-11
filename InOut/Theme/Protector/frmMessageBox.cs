@@ -15,7 +15,7 @@ namespace Theme.Protector
         {
             InitializeComponent();
         }
-         private int nSecond = 10;
+         private int nSecond = 5;
          public frmMessageBox(string strTitle, string strMsg, int second)
         {
             InitializeComponent();

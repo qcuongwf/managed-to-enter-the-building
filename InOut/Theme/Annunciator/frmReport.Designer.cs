@@ -53,6 +53,7 @@
             this.button5.TabIndex = 1;
             this.button5.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button3
             // 
@@ -67,6 +68,7 @@
             this.button3.TabIndex = 1;
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using Process;
+using Model;
 
 namespace Theme
 {
@@ -116,6 +116,13 @@ namespace Theme
                                 frm.ShowDialog(this);
                                 this.Show();
                             }
+                            else if (userType == "RE")
+                            {
+                                Theme.frmReport frm = new frmReport();
+                                this.Hide();
+                                frm.ShowDialog(this);
+                                this.Show();
+                            }
                         }
                     }
                 }
@@ -139,7 +146,7 @@ namespace Theme
         {
             if(!error.OverNubmer(txtAccount.Text, 10))
             {
-                MessageBox.Show("Tài khoản không được quá 10 kí tự");
+                MessageBoxCustom.MessageBoxCustom.Show("Tài khoản không được quá 10 kí tự");
                 txtAccount.Focus();
             }
 
@@ -149,7 +156,7 @@ namespace Theme
         {
             if (!error.OverNubmer(txtPassword.Text,100))
             {
-                MessageBox.Show("mật khẩu không được quá 100 kí tự");
+                MessageBoxCustom.MessageBoxCustom.Show("mật khẩu không được quá 100 kí tự");
                 txtAccount.Focus();
             }
         }

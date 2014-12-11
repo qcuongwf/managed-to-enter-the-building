@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Process;
+using Model;
 
 namespace Theme.Protector
 {
@@ -25,16 +25,28 @@ namespace Theme.Protector
                 account = new Accounts();
                 string str = account.GetAccountID(txtAddress.Text);
                 Cards card = new Cards();
-                transaction = new Transactions("", account.GetAccountID(txtAddress.Text), txtAddress.Text, "OUT", "");
-                if (transaction.Insert())
+                switch (card.CardTatus(txtAddress.Text))
                 {
+                    case "": MessageBox.Show("Thẻ không tồn tại trong hệ thống \nHoặc chưa được khai báo", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        break;
+                    case "CSD": MessageBox.Show("Thẻ " + txtAddress.Text + " chưa khai báo", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        break;
+                    case "DSD":
+                        {
+                            transaction = new Transactions("", account.GetAccountID(txtAddress.Text), txtAddress.Text, "OUT", "");
+                            if (transaction.Insert())
+                            {
 
-                    Users user = new Users();
-                    if (user.UserFormCard(txtAddress.Text))
-                    {
-                        frmMessageBox frm = new frmMessageBox("Thông báo", "Nhân viên " + user.name + " đã ra thành công", 5);
-                        frm.Show();
-                    }
+                                Users user = new Users();
+                                if (user.UserFormCard(txtAddress.Text))
+                                {
+                                    frmMessageBox frm = new frmMessageBox("Thông báo", "Nhân viên " + user.name + " đã ra thành công", 5);
+                                    frm.Show();
+                                }
+                            }
+
+                        }
+                        break;
                 }
             }
             catch (Exception ex)

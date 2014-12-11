@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Process;
+using Model;
 using Controller;
 
 namespace Theme
@@ -34,8 +34,8 @@ namespace Theme
         
         private void btnOk_Click(object sender, EventArgs e)
         {
-           // try
-           // {
+            try
+            {
                 user = new Users(txtID.Text, "NHANVIEN  ", txtName.Text, txtIndentity.Text, txtAddress.Text, txtPhone.Text, txtEmail.Text);
                 user.AddUser();
                 account = new Accounts(txtID.Text, txtID.Text, cmbCard.Text,"");
@@ -44,11 +44,11 @@ namespace Theme
                 card.Update();
                 LoadInfo();
                 delTextbox(); //xoa thong tin da nhap tren textbox
-           // }
-          //  catch (Exception EX)
-          //  {
-          //      MessageBox.Show(EX.ToString());
-          //  }
+            }
+            catch (Exception EX)
+            {
+                MessageBox.Show(EX.ToString());
+            }
         }
         ConnectSql connect = new ConnectSql();
         DataTable data;
@@ -73,6 +73,7 @@ namespace Theme
                     frm.ShowDialog(this);
                     LoadInfo();
                 }
+                else this.Close();
             }
             //Tự đọng tạo mã user
             user = new Users();

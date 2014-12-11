@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Data.SqlClient;
 using System.Data;
-namespace Process
+
+namespace Model
 {
     public class Users
     {
@@ -131,11 +132,12 @@ namespace Process
             email = data2[5].ToString();
         }
         //hàm kiểm tra user có tồn tại hay không?
-        public bool isExits(string type)
+       public bool isExits(string type)
         {
            Controller.CheckError error = new Controller.CheckError();
            if (error.isExists("SELECT COUNT(*) FROM USERS WHERE USERS_ID LIKE '"+type+"%'")) return true;
           else return false;
+            return true;
         }
         //Lay gia tri id user cuoi cung theo nhan vien
         public string getLastUserID()

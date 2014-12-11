@@ -17,3 +17,19 @@ C:\Users\Cuong\Google Drive\Nhom 5 - Do An Co So\Process\bin\Debug\Controller.pd
 C:\Users\Cuong\Google Drive\Nhom 5 - Do An Co So\Process\obj\Debug\Model.csprojResolveAssemblyReference.cache
 C:\Users\Cuong\Google Drive\Nhom 5 - Do An Co So\Process\obj\Debug\Process.dll
 C:\Users\Cuong\Google Drive\Nhom 5 - Do An Co So\Process\obj\Debug\Process.pdb
+E:\Google Drive\Nhom 5 - Do An Co So\InOut\Process\bin\Debug\Controller.dll
+E:\Google Drive\Nhom 5 - Do An Co So\InOut\Process\bin\Debug\Controller.pdb
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Process\bin\Debug\Process.dll
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Process\bin\Debug\Process.pdb
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Process\obj\Debug\Process.dll
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Process\obj\Debug\Process.pdb
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Process\bin\Debug\Controller.dll
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Process\bin\Debug\Controller.pdb
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Process\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Process\bin\Debug\Process.dll
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Process\bin\Debug\Process.pdb
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Process\bin\Debug\Controller.dll
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Process\bin\Debug\Controller.pdb
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Process\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Process\obj\Debug\Process.dll
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Process\obj\Debug\Process.pdb

@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="CheckError.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transaction.cs" />
     <Compile Include="Utilities\NextID.cs" />
   </ItemGroup>
   <ItemGroup>

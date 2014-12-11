@@ -175,7 +175,7 @@ namespace MessageBoxCustom
                     {
                         Button btnYes = new Button();
                         btnYes.Text = "Có";
-                        result = btnYes.DialogResult = DialogResult.Yes;
+                        btnYes.DialogResult = DialogResult.Yes;
                         btnYes.FlatStyle = FlatStyle.Popup;
                         btnYes.FlatAppearance.BorderSize = 0;
                         btnYes.BackColor = System.Drawing.Color.CornflowerBlue;
@@ -187,10 +187,11 @@ namespace MessageBoxCustom
                         btnYes.ForeColor = System.Drawing.Color.White;
                         btnYes.SetBounds((frm.ClientSize.Width / 2 - 75 - 10), frm.ClientSize.Height - (25 + 10), 75, 25);
                         frm.Controls.Add(btnYes);
+                        btnYes.Click += new EventHandler(btnYes_Click);
 
                         Button btnNo = new Button();
                         btnNo.Text = "Không";
-                        result = btnNo.DialogResult = DialogResult.No;
+                        btnNo.DialogResult = DialogResult.No;
                         btnNo.FlatStyle = FlatStyle.Popup;
                         btnNo.BackColor = System.Drawing.Color.CornflowerBlue;
                         btnNo.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
@@ -200,6 +201,7 @@ namespace MessageBoxCustom
                         btnNo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                         btnNo.ForeColor = System.Drawing.Color.White;
                         btnNo.SetBounds((frm.ClientSize.Width / 2 + 10), frm.ClientSize.Height - (25 + 10), 75, 25);
+                        btnNo.Click += new EventHandler(btnNo_Click);
                         frm.Controls.Add(btnNo);
                     }
                     break;
@@ -231,6 +233,16 @@ namespace MessageBoxCustom
                     }
                     break;
             }
+        }
+
+        void btnNo_Click(object sender, EventArgs e)
+        {
+            result = DialogResult.Cancel;
+        }
+
+        void btnYes_Click(object sender, EventArgs e)
+        {
+            result = DialogResult.Yes;
         }
     }
 

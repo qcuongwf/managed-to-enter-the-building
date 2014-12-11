@@ -11,7 +11,8 @@
     <RootNamespace>Theme</RootNamespace>
     <AssemblyName>Theme</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -37,9 +38,15 @@
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.DotNetBar2, Version=10.0.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -73,6 +80,12 @@
     </Compile>
     <Compile Include="Admin\frmCardType.Designer.cs">
       <DependentUpon>frmCardType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmCreateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmCreateAccount.Designer.cs">
+      <DependentUpon>frmCreateAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\frmFind.cs">
       <SubType>Form</SubType>
@@ -145,6 +158,18 @@
     </Compile>
     <Compile Include="Admin\frmReissuedCard.designer.cs">
       <DependentUpon>frmReissuedCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Annunciator\Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Annunciator\Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Annunciator\ReportTraffic.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportTraffic.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -250,6 +275,13 @@
     <EmbeddedResource Include="Admin\frmReissuedCard.resx">
       <DependentUpon>frmReissuedCard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Annunciator\Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Annunciator\ReportTraffic.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportTraffic.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -264,6 +296,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Protector\frmKhach-in.resx">
       <DependentUpon>frmKhach-in.cs</DependentUpon>
@@ -286,7 +319,7 @@
     <EmbeddedResource Include="Protector\frmStaffOut.resx">
       <DependentUpon>frmStaffOut.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="ClassDiagram2.cd" />
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -304,7 +337,7 @@
     </ProjectReference>
     <ProjectReference Include="..\Process\Model.csproj">
       <Project>{35562BAB-4553-4377-8D11-FDFA6409FBB3}</Project>
-      <Name>Process</Name>
+      <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

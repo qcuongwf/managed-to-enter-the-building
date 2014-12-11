@@ -5,7 +5,7 @@ using System.Text;
 using System.Data.SqlClient;
 using System.Data;
 
-namespace Process
+namespace Model
 {
     public class Transactions
     {
@@ -66,6 +66,20 @@ namespace Process
             int i=command.ExecuteNonQuery();
             myConnect.CloseConnection();
             return i==0?false:true;
+        }
+        public DataTable report(int mounth)
+        {
+            int i = 0;
+            ConnectSql myConnect = new ConnectSql();
+            SqlCommand myCommand = new SqlCommand("reportin", myConnect.getConnection);
+            myCommand.CommandType = CommandType.StoredProcedure;
+            myCommand.Parameters.Add("@mounth", SqlDbType.Int).Value = mounth;
+            SqlDataAdapter da = new SqlDataAdapter(myCommand);
+            DataTable dt = new DataTable();
+
+            da.Fill(dt);
+            return dt;
+
         }
     }
 }

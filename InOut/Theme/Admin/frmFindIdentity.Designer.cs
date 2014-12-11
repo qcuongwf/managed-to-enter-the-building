@@ -43,6 +43,7 @@
             this.dataGridView.Size = new System.Drawing.Size(559, 170);
             this.dataGridView.TabIndex = 7;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
+            this.dataGridView.DoubleClick += new System.EventHandler(this.dataGridView_DoubleClick);
             // 
             // txtFind
             // 

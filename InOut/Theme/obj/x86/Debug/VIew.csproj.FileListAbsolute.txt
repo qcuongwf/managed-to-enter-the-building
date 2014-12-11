@@ -16,7 +16,6 @@ E:\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmNhapThe.
 E:\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmRecoveredCard.resources
 E:\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmReissuedCard.resources
 E:\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmReport.resources
-E:\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmReportTraffic.resources
 E:\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmCardStatusDetail.resources
 E:\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmCardStatus.resources
 E:\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmCardTypeDetail.resources
@@ -42,7 +41,6 @@ C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.f
 C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmRecoveredCard.resources
 C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmReissuedCard.resources
 C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmReport.resources
-C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmReportTraffic.resources
 C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmCardStatusDetail.resources
 C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmCardStatus.resources
 C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmCardTypeDetail.resources
@@ -122,3 +120,106 @@ C:\Users\Cuong\Google Drive\Nhom 5 - Do An Co So\Theme\obj\x86\Debug\Theme.Prote
 C:\Users\Cuong\Google Drive\Nhom 5 - Do An Co So\Theme\obj\x86\Debug\MessageBoxCustom.MessageBoxCustom.resources
 C:\Users\Cuong\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\MessageBoxCustom.MessageBoxCustom.resources
 C:\Users\Cuong\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.Protector.frmMessageBox.resources
+E:\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\bin\Debug\Controller.dll
+E:\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\bin\Debug\Controller.pdb
+E:\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.Admin.frmFindIdentity.resources
+E:\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmReportTheHuMat.resources
+E:\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.Login.resources
+E:\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\MessageBoxCustom.MessageBoxCustom.resources
+E:\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.Protector.frmKhach_in.resources
+E:\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.Protector.frmKhach_out.resources
+E:\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.Protector.frmMessageBox.resources
+E:\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.Protector.frmStaffIn.resources
+E:\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.Protector.frmStaffOut.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\bin\Debug\Theme.exe.config
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\bin\Debug\Theme.exe
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\bin\Debug\Theme.pdb
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\bin\Debug\Controller.dll
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\bin\Debug\Process.dll
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\bin\Debug\Controller.pdb
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\bin\Debug\Process.pdb
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\View.csprojResolveAssemblyReference.cache
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.frmAdmin.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.frmCapThe.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.frmCardImport.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.frmCardType.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.frmEditEmployee.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.frmFind.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.Admin.frmFindIdentity.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.frmKhaiBaoTheHuMat.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.frmNhapThe.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.frmRecoveredCard.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.frmReport.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.frmReportTheHuMat.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.frmCardStatusDetail.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.frmCardStatus.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.frmCardTypeDetail.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.frmReissuedCard.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.Annunciator.Report.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.Login.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\MessageBoxCustom.MessageBoxCustom.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.Properties.Resources.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.Protector.frmKhach_in.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.Protector.frmKhach_out.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.Protector.frmMessageBox.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.FrmBaove.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.FrmChitiet.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.Protector.frmStaffIn.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.Protector.frmStaffOut.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\View.csproj.GenerateResource.Cache
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.exe
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme (1)\obj\x86\Debug\Theme.pdb
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\bin\Debug\Theme.exe.config
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\bin\Debug\Theme.exe
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\bin\Debug\Theme.pdb
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\bin\Debug\Controller.dll
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\bin\Debug\Process.dll
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\bin\Debug\Controller.pdb
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\bin\Debug\Process.pdb
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\View.csprojResolveAssemblyReference.cache
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmAdmin.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmCapThe.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmCardImport.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmCardType.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmEditEmployee.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmFind.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.Admin.frmFindIdentity.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmKhaiBaoTheHuMat.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmNhapThe.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmRecoveredCard.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmReport.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmReportTheHuMat.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmCardStatusDetail.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmCardStatus.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmCardTypeDetail.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmReissuedCard.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.Annunciator.Report.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.Login.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\MessageBoxCustom.MessageBoxCustom.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.Properties.Resources.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.Protector.frmKhach_in.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.Protector.frmKhach_out.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.Protector.frmMessageBox.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.FrmBaove.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.FrmChitiet.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.Protector.frmStaffIn.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.Protector.frmStaffOut.resources
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\View.csproj.GenerateResource.Cache
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.exe
+E:\Google Drive\Documents\Information Technolory\8.4 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.pdb
+C:\Users\Cuong\Desktop\Nhom 5 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\bin\Debug\Theme.exe.config
+C:\Users\Cuong\Desktop\Nhom 5 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.exe
+C:\Users\Cuong\Desktop\Nhom 5 - Do An Co So\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.pdb
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\bin\Debug\Theme.exe.config
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\bin\Debug\Controller.dll
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\bin\Debug\Controller.pdb
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.Admin.frmFindIdentity.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.frmReportTheHuMat.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.Annunciator.Report.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.Login.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\MessageBoxCustom.MessageBoxCustom.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.Protector.frmKhach_in.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.Protector.frmKhach_out.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.Protector.frmMessageBox.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.Protector.frmStaffIn.resources
+C:\Users\Win\Google Drive\Nhom 5 - Do An Co So\InOut\Theme\obj\x86\Debug\Theme.Protector.frmStaffOut.resources

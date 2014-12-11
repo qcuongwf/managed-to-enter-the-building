@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Process;
+using Model;
 
 namespace Theme
 {
@@ -23,7 +23,7 @@ namespace Theme
         }
         string idUser;
         string accID="";
-        Process.Users user;
+        Users user;
         void LoadInfo()
         {
             ConnectSql connect = new ConnectSql();
